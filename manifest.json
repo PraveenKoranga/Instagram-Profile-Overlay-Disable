@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Profile Overlay Disable",
+  "version": "1.0.0",
+  "description": "Hides the overlay divs Instagram adds after the last <script> tag on the page.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
